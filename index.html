@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -22,10 +23,10 @@
         // تعيين الوضع الداكن أو الفاتح بناءً على المخزن
         if (savedMode === "dark") {
           document.documentElement.classList.add("dark");
-          if (modeIcon) modeIcon.src = "images/sun.svg";
+          if (modeIcon) modeIcon.src = "images/projectsImages/sun.svg";
         } else if (savedMode === "light") {
           document.documentElement.classList.remove("dark");
-          if (modeIcon) modeIcon.src = "images/moon.svg";
+          if (modeIcon) modeIcon.src = "images/projectsImages/moon.svg";
         } else {
           // إذا لم تكن هناك قيمة، افتراضياً الوضع داكن
           document.documentElement.classList.add("dark");
@@ -42,11 +43,11 @@
         if (htmlElement.classList.contains("dark")) {
           htmlElement.classList.remove("dark");
           localStorage.setItem("theme", "light");
-          if (modeIcon) modeIcon.src = "images/moon.svg";
+          if (modeIcon) modeIcon.src = "images/projectsImages/moon.svg";
         } else {
           htmlElement.classList.add("dark");
           localStorage.setItem("theme", "dark");
-          if (modeIcon) modeIcon.src = "images/sun.svg";
+          if (modeIcon) modeIcon.src = "images/projectsImages/sun.svg";
         }
       }
 
@@ -142,7 +143,7 @@
                 >
               </li>
               <li>
-                <a
+                <a  
                   href="#projects"
                   class="hover:text-[#3DA35D] dark:hover:text-dark-accent font-bold"
                   >Projects</a
@@ -154,7 +155,7 @@
               <button onclick="toggleDarkMode()" class="p-2 rounded-full">
                 <img
                   id="modeIcon"
-                  src="images/moon.svg"
+                  src="images/projectsImages/moon.svg"
                   alt="Toggle Mode"
                   class="w-8 h-8"
                 />
@@ -191,7 +192,7 @@
           class="justify-center flex-shrink-0 hidden md:flex rtl:-scale-x-100"
         >
           <img
-            src="images/DeWatermark.ai_1753105113114.png"
+            src="images/download.png"
             class="max-w-[20rem] lg:max-w-[32rem] h-auto animate-bounce"
             width="1063"
             height="1003"
@@ -211,88 +212,7 @@
       </div>
     </section>
 
-    <section
-      id="course"
-      class="relative px-6 mx-auto my-64 max-w-screen-mdxl lg:max-w-screen-2xl scroll-mt-80"
-    >
-      <div class="container mx-auto mb-20 text-center">
-        <h2
-          class="text-4xl font-bold lg:text-6xl text-light-text dark:text-dark-text"
-        >
-          VX Discord server
-        </h2>
-      </div>
-      <div class="flex justify-center">
-        <div
-          class="relative flex-1 p-6 transition-transform border-4 border-dashed group border-light-primary dark:border-dark-primary rounded-3xl hover:scale-105 hover:translate-y-0 md:p-20"
-        >
-          <!-- Background Overlay -->
-          <div
-            class="absolute inset-0 bg-gradient-to-br from-light-primary/60 to-light-bg/60 dark:from-dark-primary/60 rounded-3xl"
-          ></div>
-          <div
-            class="relative z-10 flex flex-col items-center gap-8 md:flex-row md:gap-12"
-          >
-            <!-- Video -->
-            <div class="relative flex-shrink-0 md:w-1/2">
-              <video
-                autoplay
-                loop
-                muted
-                class="object-cover w-full max-w-[18rem] md:max-w-full rounded-2xl"
-              >
-                <source
-                  src="video/Recording 2025-07-21 170852.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              <!-- Discount Badge -->
-              <div
-                
-            
-
-            <!-- Course Info -->
-            <div class="w-full text-center md:w-1/2">
-              <h3
-                class="mb-4 text-2xl font-bold dark:text-dark-text md:text-3xl"
-              >
-                 Join VX
-                <span class="whitespace-nowrap">Discord Server!</span>
-              </h3>
-              <p
-                class="mb-6 text-base font-bold leading-relaxed text-light-secondary dark:text-dark-accent md:text-lg"
-              >
-                Join VX Discord — your ultimate hub for gaming, chatting, and nonstop fun!
-                
-                >
-                
-              </p>
-              <a
-                href="https://discord.gg/bhJtuJuE"
-                class="inline-flex items-center px-6 py-3 text-sm font-bold text-white bg-green-600 rounded-full dark:bg-dark-primary md:px-10 md:py-5 md:text-lg hover:bg-green-700 hover:animate-wiggle dark:hover:text-dark-text"
-                target="_blank"
-                style="animation: wiggle 1s infinite alternate ease-in-out"
-              >
-                Join VX
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Keyframes for Wiggle -->
-      <style>
-        @keyframes wiggle {
-          0% {
-            transform: rotate(-3deg);
-          }
-          100% {
-            transform: rotate(3deg);
-          }
-        }
-      </style>
-    </section>
+    
 
     <section
       id="contact"
@@ -323,7 +243,8 @@
               aria-label="link for Sop second channel"
             >
               <img
-                src="/images/Screenshot 2025-07-21 172315.png"
+                src="/images/61d11f9e43bca665fcf2a4ccd0488ebc-removebg-preview.png
+                "
                 alt="Sop second channel"
                 class="object-cover w-full h-full mb-2 rounded-full"
                 loading="lazy"
@@ -332,7 +253,7 @@
             <h2
               class="flex items-center justify-center ml-auto text-5xl font-bold text-[#3DA35D] dark:dark:text-dark-text mb-2"
             >
-              mv.jox
+             ℳℴℎ𝒶𝓂ℯ𝒹
             </h2>
             <h1
               class="opacity-100 lg:opacity-0 flex items-center justify-center ml-auto text-1xl font-bold text-[#3DA35D] dark:dark:text-dark-text lg:group-hover:opacity-100 duration-300"
@@ -346,7 +267,7 @@
             class="absolute top-1/2 right-[70%] -translate-y-1/2 flex-col items-center gap-6 opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 hidden lg:flex"
           >
             <a
-              href="https://www.youtube.com/watch?v=TOgC7GYA5bE&"
+              href="https://www.instagram.com/mv.jox/"
               target="_blank"
               class="w-[200px] h-[130px] overflow-visible"
               aria-label="a video about how to learn programming"
@@ -370,12 +291,12 @@
             class="w-[250px] h-[250px] bg-cyan-500 rounded-full transition-transform lg:group-hover:scale-110 duration-300 ease-in-out mx-auto lg:group-hover:-translate-x-20 mb-20 ml-auto"
           >
             <a
-              href="https://discord.gg/bhJtuJuE"
+              href="https://www.youtube.com/@MR_obedat"
               target="_blank"
               aria-label="Link for Sop first channel"
             >
               <img
-                src="/images/VX.png"
+                src="/images/38afc5b39bd19e4055e5eebd7a7ba764.jpg"
                 alt="Sop first channel"
                 class="object-cover w-full h-full mb-2 rounded-full"
                 loading="lazy"
@@ -384,12 +305,12 @@
             <h2
               class="flex items-center justify-center ml-auto text-5xl font-bold text-[#3DA35D] dark:dark:text-dark-text mb-3"
             >
-              VX
+              MRobedat
             </h2>
             <h1
               class="opacity-100 lg:opacity-0 flex items-center justify-center ml-auto text-1xl font-bold text-[#3DA35D] dark:dark:text-dark-text lg:group-hover:opacity-100 duration-300"
             >
-              MY Offcial Discord Server 
+              MY Offcial Youtube account 
             </h1>
           </div>
 
@@ -414,7 +335,7 @@
         class="relative flex flex-row items-center justify-center gap-6 mx-auto my-12 rounded-lg lg:flex lg:flex-wrap max-w-7xl"
       >
         <a
-          href="https://x.com/"
+          href="https://x.com/mv_jox"
           target="_blank"
           class="duration-300 transform hover:scale-110 hover:-rotate-6"
           aria-label="a link to SOP x account"
@@ -438,7 +359,7 @@
           </div>
         </a>
         <a
-          href="https://www.tiktok.com/"
+          href="https://www.tiktok.com/@mv.jox"
           target="_blank"
           class="duration-300 transform hover:scale-110 hover:rotate-3"
           aria-label="a link to SOP tiktok account"
@@ -540,178 +461,7 @@
       </div>
     </section>
 
-    <section
-      id="projects"
-      class="py-16 bg-light-bg dark:bg-dark-bg scroll-mt-32"
-    >
-      <div class="container px-6 mx-auto">
-        <!-- العنوان الرئيسي -->
-        <div class="mb-12 text-center">
-          <h2
-            class="font-bold text-[#3DA35D] whitespace-nowrap text-3xl lg:text-6xl dark:text-dark-text"
-          >
-            Explore My Projects
-          </h2>
-          <p
-            class="mt-5 text-2xl font-bold text-light-text dark:text-dark-primary lg:text-4xl"
-          >
-            Games, VR, and other cool things!
-          </p>
-        </div>
-
-        <!-- الأقسام -->
-        <div class="space-y-16">
-          <!-- قسم الألعاب -->
-          <div>
-            <h3
-              class="p-6 mb-8 text-2xl font-semibold text-center border-4 border-dashed rounded-lg border-light-accent text-light-text dark:text-dark-text dark:border-dark-accent"
-            >
-              Games
-            </h3>
-            <div
-              class="grid items-center justify-center grid-cols-1 gap-6 lg:grid-cols-3"
-            >
-              <a
-                href="https://sopdev.itch.io/pirate-vs-octopus"
-                target="_blank"
-                class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:scale-105 hover:rotate-2"
-              >
-                <img
-                  src="/images/projectsImages/image2.png"
-                  alt="Pirate Vs Octopus"
-                  class="object-cover w-full h-64"
-                  loading="lazy"
-                />
-                <div
-                  class="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100"
-                >
-                  <p class="text-lg font-bold text-white">Pirate Vs Octopus</p>
-                </div>
-              </a>
-              <a
-                href="https://sopdev.itch.io/"
-                target="_blank"
-                class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:scale-110 hover:rotate-1"
-              >
-                <img
-                  src="images/projectsImages/Itch.io_.webp"
-                  alt="Itch.io Page"
-                  class="object-cover w-full h-72"
-                  loading="lazy"
-                />
-                <div
-                  class="absolute inset-0 flex flex-col items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 gap-7 group-hover:opacity-100"
-                >
-                  <h1 class="text-2xl font-bold text-white">Itch.io Page</h1>
-                  <br />
-                  <p class="text-lg font-bold text-gray-300">
-                    All my games in one place
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://sopdev.itch.io/fl-yghrisha"
-                target="_blank"
-                class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:scale-105 hover:-rotate-2"
-              >
-                <img
-                  src="images/projectsImages/logo.webp"
-                  alt="Fl-yghrisha"
-                  class="object-cover w-full h-64"
-                  loading="lazy"
-                />
-                <div
-                  class="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100"
-                >
-                  <p class="text-lg font-bold text-white">Fl-yghrisha</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- قسم الـ VR -->
-          <div>
-            <h3
-              class="p-6 mb-8 text-2xl font-semibold text-center border-4 border-dashed rounded-lg border-light-accent text-light-text dark:text-dark-text dark:border-dark-accent"
-            >
-              VR Projects
-            </h3>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <a
-                href="https://shorturl.at/aEFnG"
-                target="_blank"
-                class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:scale-105 hover:rotate-3"
-              >
-                <img
-                  src="images/projectsImages/vr1.webp"
-                  alt="VR 1"
-                  class="object-cover w-full h-60"
-                  loading="lazy"
-                />
-                <div
-                  class="absolute inset-0 flex flex-col items-center justify-center transition-opacity bg-green-600 opacity-0 bg-opacity-30 dark:bg-blue-600 dark:bg-opacity-30 group-hover:opacity-100"
-                >
-                  <p class="text-2xl font-bold text-white">Timeless Trek</p>
-                  <p class="text-lg font-bold text-gray-300">
-                    A game about exploring the culture of Aseer.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://sopdev.itch.io/ancient-egypt"
-                target="_blank"
-                class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:scale-110 hover:-rotate-3"
-              >
-                <img
-                  src="images/projectsImages/vr2.webp"
-                  alt="VR 2"
-                  class="object-cover w-full h-60"
-                  loading="lazy"
-                />
-                <div
-                  class="absolute inset-0 flex flex-col items-center justify-center transition-opacity bg-green-600 opacity-0 bg-opacity-30 dark:bg-blue-600 dark:bg-opacity-30 group-hover:opacity-100"
-                >
-                  <p class="text-2xl font-bold text-white">Ancient Egypt</p>
-                  <p class="text-lg font-bold text-gray-300">
-                    Dive into the wonders of Ancient Egypt!
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3
-              class="p-6 mb-8 text-2xl font-semibold text-center border-4 border-dashed rounded-lg border-light-accent dark:text-dark-text text-light-text dark:border-dark-accent"
-            >
-              MY Projects
-            </h3>
-            <div class="grid grid-cols-1">
-              <a
-                href=""
-                target="_blank"
-                class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:scale-105 hover:rotate-2"
-                aria-label="a link to my game Development ourse"
-              >
-                <img
-                  src="images/2e632fff-ab89-4f4c-ad60-48fa494c993b_removalai_preview.png"
-                  alt="My game development course"
-                  class="object-cover w-full h-80"
-                  loading="lazy"
-                />
-                <div
-                  class="absolute inset-0 flex items-center justify-center transition-opacity bg-green-600 opacity-0 bg-opacity-30 dark:bg-blue-600 dark:bg-opacity-30 group-hover:opacity-100"
-                >
-                  <p class="text-3xl font-bold text-white">
-                    Shirts for VX Team
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
+    
 
     <footer class="py-8 mt-16 bg-light-accent dark:bg-dark-secondary">
       <div class="container px-6 mx-auto text-center">
